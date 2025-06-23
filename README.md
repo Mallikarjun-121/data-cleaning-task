@@ -9,7 +9,7 @@ This project involves cleaning and preparing the *Netflix Titles* dataset using 
 
 
 ## Task Files
-- netflix_cleaning.ipynb – Colab notebook containing the code  
+- Data_Cleaning_Task1 – Colab notebook containing the code  
 - netflix_titles.csv – Original raw dataset from Kaggle  
 - cleaned_netflix_titles.csv – Final cleaned dataset ready for analysis  
 
