@@ -1,43 +1,41 @@
-# 📊 Netflix Data Cleaning Project
+# Netflix Titles – Data Cleaning & Preprocessing
 
-This project performs **data cleaning and preprocessing** on the **Netflix Titles** dataset using **Python (Pandas)** in **Google Colab**.
+This project involves cleaning and preparing the *Netflix Titles* dataset using *Python (Pandas)* in *Google Colab*. The goal is to ensure the data is consistent, accurate, and ready for analysis or modeling.
 
----
 
-## 📁 Files Included
+## Tools & Technologies
+- *Python (Pandas)*
+- *Google Colab*
 
-- 📓 `netflix_cleaning.ipynb` – Google Colab notebook with data cleaning code  
-- 📄 `cleaned_netflix_titles.csv` – Final cleaned dataset
 
----
+## Task Files
+- netflix_cleaning.ipynb – Colab notebook containing the code  
+- netflix_titles.csv – Original raw dataset from Kaggle  
+- cleaned_netflix_titles.csv – Final cleaned dataset ready for analysis  
 
-## 🧹 Cleaning Steps Performed
 
-- ✅ **Handled missing values** using `.dropna()` and `.fillna()`
-- ✅ **Removed duplicate rows** to avoid redundancy
-- ✅ **Standardized text**: converted to lowercase and stripped extra spaces
-- ✅ **Converted date formats**: `date_added` changed to `datetime` format
-- ✅ **Renamed column headers** to lowercase with underscores (e.g., `Date Added` → `date_added`)
-- ✅ **Fixed data types**: ensured `release_year` is stored as integer
+## Data Cleaning Steps
 
----
+### 1. Missing Value Handling
+- Removed rows with missing values in the title column (essential identifier).
+- Replaced all other missing fields with the placeholder 'unknown'.
 
-## 📌 Tools Used
+### 2. Duplicate Removal
+- Identified and removed exact duplicate records to prevent redundancy.
 
-- Google Colab  
-- Python 3  
-- Pandas library
+### 3. Text Standardization
+- Converted all string columns to lowercase for consistency.
+- Stripped unnecessary spaces from all text fields.
 
----
+### 4. Date Formatting
+- Parsed and reformatted the date_added column to a consistent dd-mm-yyyy string format.
 
-## 🗂 Dataset Source
+### 5. Column Renaming
+- Renamed all columns to lowercase and replaced spaces with underscores  
+  (e.g., Release Year → release_year).
 
-Original dataset: [Netflix Movies and TV Shows on Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+### 6. Data Type Correction
+- Converted release_year from object type to a clean, nullable integer type (Int64).
 
----
-
-## ✅ Author
-
-*Your Name Here*  
-GitHub: [github.com/your-username](https://github.com/your-username)
-
+### 7. Final Output
+- Cleaned dataset saved as: cleaned_netflix_titles.csv
